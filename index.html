@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prathamesh Navale</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!--------- HOME --------->
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="res/logo.png" class="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Skills</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Contact</a></li>
+            </nav>
+
+            <div class="header-text">
+                <p>HI, I'm</p>
+                <h1> PRATHAMESH </br> NAVALE..</h1>
+            </div>
+
+        </div>
+    </div>
+
+    <!--------- ABOUT --------->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="res/profile1.jpg">
+                </div>
+
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p class="sub-para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus accusamus itaque repellat explicabo omnis nobis impedit, eveniet illum, iure quisquam temporibus. Et, dolor? Eaque quasi molestiae quibusdam quae tempore pariatur?</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <!-- Skills Tab -->
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li>
+                                <span>UI/UX</span><br><div class="info">Designing Web-App Interfaces</div>
+                            </li>
+                            <li>
+                                <span>Web Development</span><br><div class="info">Web-App Development</div>
+                            </li>
+                            <li> 
+                                <span>App Development</span><br><div class="info">Biulding Android Apps in Java</div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Experience Tab -->
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li>
+                                <span>UI/UX</span><br>Designing Web-App Interfaces
+                            </li>
+                            <li>
+                                <span>Web Development</span><br>Web-App Development
+                            </li>
+                            <li> 
+                                <span>App Development</span><br>Building Android Apps in Java
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Education Tab -->
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li>
+                                <span>UI/UX</span><br>Designing Web-App Interfaces
+                            </li>
+                            <li>
+                                <span>Web Development</span><br>Web-App Development
+                            </li>
+                            <li> 
+                                <span>App Development</span><br>Biulding Android Apps in Java
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--------- SERVICES --------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">Services</h1>
+            <div class="services-list">
+                <div>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque est, quod cumque facere odit accusamus nihil eaque suscipit aut hic?</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <h2>UI/UX</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque est, quod cumque facere odit accusamus nihil eaque suscipit aut hic?</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <h2>App Design</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque est, quod cumque facere odit accusamus nihil eaque suscipit aut hic?</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--------- SKILLS --------->
+
+
+    <script>
+
+        // ----- About JS -----
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+        // ----- About JS -----
+
+
+        
+        // ----- About JS -----
+
+
+
+    </script>
+</body>
+</html>
